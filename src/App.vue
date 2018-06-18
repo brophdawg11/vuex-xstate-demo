@@ -1,28 +1,23 @@
 <template>
-  <div id="app">
-    <img src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+    <div id="app">
+        <StarWars />
+        <hr>
+        <StarWarsVuex />
+    </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue';
+import StarWars from './components/StarWars.vue';
+import StarWarsVuex from './components/StarWarsVuex.vue';
 
 export default {
-  name: 'app',
-  components: {
-    HelloWorld,
-  },
+    name: 'app',
+    components: {
+        StarWars,
+        StarWarsVuex,
+    },
 };
 </script>
 
 <style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
 </style>
